@@ -1,0 +1,287 @@
+<html>
+    <head>
+      <title>HOME</title>
+        <style>
+            .header {
+                background: #333;
+                height: 60px;
+                width: 1500px;
+                border: 1px solid black;
+                border-radius: 25px;
+                padding: 10px;
+            }
+            li {
+                text-decoration: none;
+                display: flex;
+                display: inline;
+                position: relative;
+                margin: 20px;
+            }
+            li a {
+                text-decoration: none;
+                font-size: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: whitesmoke;
+                display: inline;
+                padding: 1px;
+                border: 1px solid black;
+                border-radius: 20px;
+                position: relative;
+                margin: 10px;
+            }
+            li a:hover {
+                background-color: blue; 
+                transition: 0.5s;
+                opacity: 0.7;
+                position: relative;
+                border: 1px solid blue;
+                border-radius: 20px;
+                color: white;
+            }
+            img {
+                float: right;
+            }
+            .carrossel {
+      width: 100%;
+      height: 400px;
+      position: relative;
+    }
+    
+    .slides {
+      width: 95%;
+      height: 90%;
+      position: absolute;
+      margin-left: 2%;
+      margin-top: 2%;  
+      border-radius: 40px;    
+    }
+    
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: none;
+      border-radius: 40px;
+    }
+    
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 40px;
+    }
+    
+    .navigation {
+      width: 100%;
+      height: 30px;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .navigation label {
+      width: 20px;
+      height: 20px;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin: 10px;
+      cursor: pointer;
+    }
+    
+    #slide1:checked ~ .slides .slide:nth-child(1),
+    #slide2:checked ~ .slides .slide:nth-child(2),
+    #slide3:checked ~ .slides .slide:nth-child(3) {
+      display: block;
+    }
+    .navigation label:hover{
+    background-color: #707070; 
+    transition: 0.5s;
+    opacity: 0.7;
+    }
+    .contant {
+        height: 60px;
+        width: 1500px;
+        margin-top: 5px;
+        background: black;
+    }
+    a h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        margin-left: 40px;
+        margin-top: 20%;
+        display: flex;
+        text-decoration: none;
+        color: black;
+    }
+    a h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        margin-left: 70px;
+        margin-top: 10%;
+        display: flex;
+        text-decoration: none;
+        color: black;
+    }
+    a h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        margin-left: 90px;
+        margin-top: 10%;
+        display: flex;
+        text-decoration: none;
+        color: black;
+    }
+    a h4 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        margin-left: 45px;
+        margin-top: 10%;
+        display: flex;
+        text-decoration: none;
+        color: black;
+    }
+    a {
+      text-decoration: none;
+    }
+    form {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        background: white;
+        display: flex;
+        margin-top: 55%;
+    }
+    input {
+        padding: 5px;
+        border: none;
+        outline: none;
+        flex: 1;
+    }
+    button {
+        padding: 5px 10px;
+        background-color: cornflowerblue;
+        color: white;
+        border: none;
+        border-radius: 20px;
+
+    }
+    button:hover {
+        background-color: blue; 
+        transition: 0.5s;
+        opacity: 0.7;
+        position: relative;
+        cursor: pointer;
+        color: white;
+    }
+    div.lista {
+        padding: 5px;
+        margin-top: 5%;
+        display: flex;
+        text-decoration: none;
+    }
+    .lista {
+        height: 550px;
+        width: 1490px;
+        background: whitesmoke;
+        margin: 5px;
+        border-radius: 40px;
+        text-decoration: none; 
+        padding: 10px;
+    }
+    .item {  
+        display: inline;
+        float: left;
+        text-decoration: none;
+        padding: 30px;
+        border-radius: 50px;
+    }
+    .item img {
+      border-radius: 50px;
+    }
+    .item:hover {
+        background-color: #bbbbbb; 
+        transition: 0.5s;
+        opacity: 0.7;
+        position: relative;
+        border: 1px solid blue;
+        border-left: 20%;
+        border-radius: 20px;
+        color: blue;
+        cursor: pointer;
+    }
+    .seach input {
+      margin-top: 100px;
+    }
+        </style>
+    </head>
+    <body bgcolor="black">
+        <div class="header"><li><a href="home.html">INICIO</a><a href="index.html">CADASTRO</a><a href="eventoscriados.html">EVENTOS</a>
+            <a href="sobre.html">SOBRE</a></li><img src="6731023-desenho-de-passaro-desenho-vetor-removebg-preview.png" height="80px" width="80px" hidden></div>
+            <div class="carossel">
+                <input type="radio" name="carrosselsel" id="slide1" checked hidden>
+                <input type="radio" name="carrosselsel" id="slide2"  hidden>
+                <input type="radio" name="carrosselsel" id="slide3" hidden>
+                <div class="slides">
+                  <div class="slide">
+                    <img src="img/Design sem nome (5).png" alt="Slide 1">
+                  </div>
+                  <div class="slide">
+                    <img src="img/Design sem nome (6).png" alt="Slide 2">
+                  </div>
+                  <div class="slide">
+                    <img src="img/Design sem nome (7).png" alt="Slide 3">
+                  </div>
+                </div>
+                <div class="navigation">
+                  <label for="slide1"></label>
+                  <label for="slide2"></label>
+                  <label for="slide3"></label>
+                </div>
+              </div>
+              <div id="search">
+                <form>
+                    <input name="search" placeholder="Nome do filme" style="font-size: 15px;"/>
+                    <button>PESQUISAR</button>
+                </form>
+              </div>
+            </div>
+            <div class="lista">
+                <div class="item">
+                    <a href="https://youtu.be/h2lVX71L_3A?feature=shared"><img src="img/fnaf.png"  height="410px" width="300px" style="margin-right: 40px;" style="border-radius: 50px;"></a>
+                    <a href="https://youtu.be/h2lVX71L_3A?feature=shared"><h1>Five nights at freddy's</h1></a>
+                </div>
+                <div class="item">
+                  <a href="https://youtu.be/heT-IduMJRU?feature=shared"><img src="img/napoleao.png" class="hidden" src="dir/image.png" onload="upgradeImage(this);" height="410px" width="300px" style="margin-right: 10x;" style="border-radius:50px;"></a>
+                    <a href="https://youtu.be/heT-IduMJRU?feature=shared"><h2>Napoleão</h2></a>
+                </div>
+                <div class="item">
+                  <a href="https://youtu.be/Ujs1Ud7k49M?feature=shared"><img src="img/barbie.png" height="410px" width="300px" style="margin-left: 1px;" style="border-radius:50px;"></a>
+                    <a href="https://youtu.be/Ujs1Ud7k49M?feature=shared"><h3>Barbie</h3></a>
+                </div>
+                <div class="item">
+                  <a href="https://youtu.be/YizU376o3tQ?feature=shared"><img src="img/jurassic.png" height="410px" width="300px" style="margin-left: 1px;" style="border-radius:50px;"></a>
+                    <a href="https://youtu.be/YizU376o3tQ?feature=shared"><h4>Jurassic Park</h4></a>
+                </div>
+            </div>
+            <div class="lista">
+              <div class="item">
+                  <a href="https://youtu.be/t06RUxPbp_c?feature=shared"><img src="img/HomemAranha1.png" height="410px" width="300px" style="margin-right: 40px;" style="border-radius: 50px;"></a>
+                  <a href="https://youtu.be/t06RUxPbp_c?feature=shared"><h1>Homem Aranha 1</h1></a>
+              </div>
+              <div class="item">
+                <a href="https://youtu.be/dD264ZjfKlk?feature=shared"><img src="img/ItACoisa1.png" height="410px" width="300px" style="margin-right: 10x;" style="border-radius:50px;"></a>
+                  <a href="https://youtu.be/dD264ZjfKlk?feature=shared"><h2>It a Coisa</h2></a>
+              </div>
+              <div class="item">
+                <a href="https://youtu.be/HKVve_VSz58?feature=shared"><img src="img/GenteGrande1.png" height="410px" width="300px" style="margin-left: 1px;" style="border-radius:50px;"></a>
+                  <a href="https://youtu.be/HKVve_VSz58?feature=shared"><h3>Gente Grande 1</h3></a>
+              </div>
+              <div class="item">
+                <a href="https://youtu.be/58pICzXa9bw?feature=shared"><img src="img/GenteGrande2.png" height="410px" width="300px" style="margin-left: 1px;" style="border-radius:50px;"></a>
+                  <a href="https://youtu.be/58pICzXa9bw?feature=shared"><h4>Gente Grande 2</h4></a>
+              </div>
+          </div>
+    </body>
+</html>

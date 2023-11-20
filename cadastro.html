@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>CADASTRO</title>
+        <script defer src="main.js"></script>
+    <style>
+    .container {
+    width: 1500px;
+    height: 720px;
+    background: #6C7A89;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/Design\ sem\ nome\ \(2\).png);
+}
+    .box {
+    width:500px;
+    height: 505px;
+    background: whitesmoke;
+    border: 10px solid black;
+    border-style: inset;
+    margin-right: 60px;
+    }
+    .body {
+    margin: 0px;
+}
+    h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: cornflowerblue;
+    animation-duration: 2s;
+    animation-name: slidein;
+    }
+    @keyframes slidein {
+            from {
+                margin-top: 100%;
+                width: 300%;
+            }
+            to {
+                margin-top: 0%;
+                width: 100%;
+            }
+            }
+    button {
+    text-align: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 407px;
+    }
+    button a {
+    color: white;
+    background-color: cornflowerblue;
+    border: 1px solid #333;
+    border-radius: 20px;
+    }
+    button a:hover{
+    transition: 0.5s;
+    opacity: 0.7;
+    border: 1px solid blue;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 178);
+    color: white;
+}
+    a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: right;
+        text-decoration: none;
+        color: blue;
+        display: inline;
+    }
+    select {
+        border: 1px solid black;
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    input {
+        border: 1px solid border;
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    textarea {
+        border: 1px solid black;
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    </style>
+    </head>
+    <body bgcolor="black">
+        <div class="container">
+        <div class="box"><h1>CADASTRO</h1><form action="main.js" method="post" target="_self">
+        <tr>
+            <td align="center">
+            <p><input
+            type="text"
+            placeholder="NOME DO EVENTO"
+            maxlength="50"
+            size="50px"
+            style="padding: 1%;"
+            style="overflow: hidden;" id="nome"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p><input name="identificador"
+            style="height: 140px;"
+            size="50px"
+            placeholder="SOBRE O EVENTO" id="descr"></input></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p><input
+            type="text"
+            placeholder="LOCAL DO EVENTO"
+            maxlength="50px"
+            size="40px"
+            style="padding: 1%;"
+            style="overflow: hidden;" id="local">
+            </p><p>DATA E HORARIO: <input
+            type="text"
+            style="overflow: hidden;"
+            style="padding: 5%;" id="dh"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><p>GÊNERO: 
+            <input
+            type="text"
+            size="30px" id="gene"></p>
+            </td>
+        </tr>
+        <tr>
+            <div id="btn-cadastrar">
+                <a href="eventoscriados.html"><h2><button type="button">ENVIAR</button></a></h2>
+                </div>
+            </td>
+        </tr>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>
